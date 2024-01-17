@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+
+</script>
+</head>
+<body>
+<h3>선호하는 영화장르</h3>
+ <form name="frm">
+ <p> 가장 선호하는 영화 장르를 한개만 선택하세요</p>
+ <label name="like">스릴러</label>
+ <input type="radio" name= "genre1" id="g1" value="스릴러">
+ 
+ 
+ 
+ 
+ </form>
+
+</body>
+</html>

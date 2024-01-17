@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here HW01</title>
+<script type="text/javascript">
+	var a = prompt("1~7사이 숫자를 입력하세요","");
+	if(a<1 || a>7)      document.write("잘못 입력하셨습니다");
+	else if(isNaN(a)) 	document.write("숫자가 아닙니다");
+	else {
+	 	switch(a){
+			case 1 : document.write("1 입력하셨습니다".fontcolor("red"));    break;
+			case 2 : document.write("2 입력하셨습니다".fontcolor("orange")); break;
+			case 3 : document.write("3 입력하셨습니다".fontcolor("yellow")); break;
+			case 4 : document.write("4 입력하셨습니다".fontcolor("green"));  break;
+			case 5 : document.write("5 입력하셨습니다".fontcolor("blue"));   break;
+			case 6 : document.write("6 입력하셨습니다".fontcolor("navy"));   break;
+			default : document.write("7 입력하셨습니다".fontcolor("violet")); break;
+		} 
+	}
+</script>
+</head>
+<body>
+   <h3>Switch문 연습하기</h3>
+   <p> 사용자가 입력할 수 있는 "1~7사이 숫자를 입력하세요"대화창을 띄운다 <br>
+   	   범위 내의 수가 아닐경우 "잘못입력하셨습니다"대화창을 띄운다 <br>
+   	   숫자를 입력하지 않았을 경우 "숫자가 아닙니다" 대화창을 띄운다 <br>
+   	   정상범위의 숫자일 경우 switch 문을 통해 "ㅇ번호를 입력하셨습니다"를 출력한다 <br>
+   	   폰트색은 1- 레드 2-오렌지 3-옐로우 4-그린 5-블루 6-네이비 7-바이오렛 으로 지정한다.
+   </p>
+
+</body>
+</html>

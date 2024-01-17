@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function chgRedColor() {
+	var str = document.getElementById("text");
+	str.style.color = "red";
+} 
+function chgOrangeColor() {
+	var str= document.getElementById("text");
+	str.style.color="orange";
+	
+}
+
+</script>
+</head>
+<body>
+ <h3> dom02 Event통해 수행 </h3>
+ <hr>
+ <p> "색깔이 변합니다"라는 문구를 나타내고, 빨간색 클릭버튼과 오랜지색 클릭버튼을 생성하여 <br>
+  버튼을 누를때마다 색깔이 해당 색으로 문구가 변하는 dom을 만들자. 
+ </p>
+ <p id="text">"색깔이 변합니다"</p>
+ <button onclick="chgRedColor()">빨간색</button><br>
+ <button onclick="chgOrangeColor()">오렌지색</button>
+
+</body>
+</html>

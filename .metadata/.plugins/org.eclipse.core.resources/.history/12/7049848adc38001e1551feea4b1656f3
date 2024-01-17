@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function chk() {
+	var str = "당신이 선택한 가장 선호하는 장르는 "
+	for(var i=0; i<frm.genre.length; i++){
+		if(frm.genre[i].checked) str += frm.genre[i].value += "입니다";
+	}
+	
+	alert(str);
+	var p_message = document.getElementById("message");
+	p_message.innerHTML=str;
+}	
+
+</script>
+</head>
+<body>
+<h3>영화장르 선호도 조사</h3>
+ <form name="frm">
+ <p> 가장 선호하는 영화 장르를 한개만 선택하세요.</p>
+ <label name="like1">스릴러</label>
+ <input type="radio" name= "genre" id="g1" value="스릴러">
+ <label name="like2">로맨스</label>
+ <input type="radio" name= "genre" id="g2" value="로맨스">
+ <label name="like3">sf</label>
+ <input type="radio" name= "genre" id="g3" value="sf">
+ <label name="like4">액션</label>
+ <input type="radio" name= "genre" id="g4" value="액션"> <p>
+ 
+ <input type="button" value="확인" onclick="chk()">
+ </form>
+ <hr>
+ <p id="message"></p>
+
+</body>
+</html>

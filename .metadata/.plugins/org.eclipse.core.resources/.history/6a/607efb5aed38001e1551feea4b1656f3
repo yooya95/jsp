@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function chk() {
+	var str = "내가 좋아하는 영화는\n";
+	for (var i=0; i < frm.movie.length; i ++) {
+		if (frm.movie[i].selected) {
+			str +=frm.movie[i].value;
+			break;
+		}
+	}
+	alert(str);
+	var p_moveMessage = document.getElementById("moveMessage");
+	p_moveMessage.innerHTML = str;
+
+}
+
+</script>
+</head>
+<body>
+<h2>좋아하는 영화는</h2>
+	<form name="frm">
+	<select name="movie"  >
+	      <option value="유토피아">유토피아</option>
+	      <option value="임파서벌">임파서벌</option>
+	      <option value="더문">더문</option>
+	      <option value="슈퍼맨" selected="selected">슈퍼맨</option>
+	      <option value="원더우먼">원더우먼</option>
+	</select><p>
+	<input type="button" value="확인" onclick="chk()">
+	
+	<p id="moveMessage"></p>
+</form>
+</body>
+</html>

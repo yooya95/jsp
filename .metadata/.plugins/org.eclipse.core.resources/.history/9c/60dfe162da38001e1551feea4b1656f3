@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function chk() {
+	var mStr=  "좋아하는 영화는 ?\n";
+	for(var i =0; i < frm.movie.length; i++) {
+		if (frm.movie[i].checked) {
+			mStr+= frm.movie[i].value+"\n";
+			break;
+		}
+	}
+	alert(mStr);
+	var p_moveMessage = document.getElementById("moveMessage");
+	p_moveMessage.innerHTML = mStr;
+
+}
+	
+
+</script>
+</head>
+<body>
+	<form action="" name="frm">
+		<h2>다음에서 선택하세요</h2>
+		1. 가장 좋아하는 영화 한 개만을 선택하세요.	<br>
+		<input type="radio" name="movie" value="콘크리트유토피아" id="m1">
+		콘크리트유토피아
+		<input type="radio" name="movie" value="밀수" id="m2">
+		<label for ="m2">밀수</label>
+		<input type="radio" name="movie" value="미션임파서벌" id="m3">
+		<label for ="m3">미션임파서벌</label>
+		<hr>
+		<input type="button" value="확인"  onclick="chk()" >
+		
+		<p id="moveMessage"></p>
+ 
+	</form>
+</body>
+</html>

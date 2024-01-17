@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var date1 = new Date();
+	var day;
+	
+	document.write("올해는" + date1.getFullYear() + "년입니다.<p>");
+	document.write("1.오늘은" + date1.getMonth() +"월" + date1.getDate() + "일.<p>");
+	document.write("2.오늘은" + (date1.getMonth()+1) +"월" +date1.getDate() + "일.<p>");
+
+	// 현재 요일을 반환
+	switch (date1.getDay()) {
+		case 0: day = "일";
+		break
+		case 1: day = "월";
+		break
+		case 2: day = "화";
+		break
+		case 3: day = "수";
+		break
+		case 4: day = "목";
+		break
+		case 5: day = "금";
+		break
+		case 6: day = "토";
+		break
+	}
+	document.write("3. 오늘은" +date1.getDay()+"요일입니다.<p>")
+	document.write("3. 오늘은" +day +"요일입니다.<p>")
+	</script>
+</head>
+<body>
+	<h3> date 2 예제_switch 문과 date 객체를 이용한 년/월/일 요일 각각 가져오기</h3>
+	<p>getFullYear 메서드 현재 연도의 4비트 숫자로 반환<br>
+	   getMonth()는 현재 월을 숫자로 반환한다.<br>
+	   자바스크립트에서는 0부터 인덱스로 표시되기 때문에 0은 1월이다. <br> 
+	   getDate()는 현재 일을 숫자로 반환한다.
+	   getDay()는 현재 날짜와 요일에 해당하는 숫자를 반환한다.<br>
+	   자바스크립트에서 0부터 인덱스로 표시되기 때문에 0은 월요일이다.
+	
+	</p>
+</body>
+</html>

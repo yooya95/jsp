@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+</script>
+</head>
+<body>
+ <form name="frm" outsubmit="chk()">
+  개인정보를 입력해주세요<br>
+  <hr>
+  <label>이름 </label>
+  <input type="text" name="" >
+  
+
+ 
+ </form>
+</body>
+</html>

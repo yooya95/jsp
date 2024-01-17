@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var date1 = new Date();
+	var date2 = new Date();
+	document.write("1.date1는" + date1 + "<p>");    //현재 년도를 반환
+	date1.setFullYear(2023, 1, 19);				   //자바스크립트에서 2월은 1(인덱스값)
+	document.write("2.date1는" + date1 + "<p>");    //현재 연도를 반환
+	date2.setMonth(1);
+	document.write("2-1.date2는" + date2 + "<p>"); 
+	
+	date2.setDate(10);
+	document.write("date2는 " + date2 + "<p>");
+	date2.setDate(50);
+	//날짜 초과시 초과되는 일수만큼 다음달로 넘어감
+	document.write("날짜 초과시 date2는" + date2 + "<p>");      //현재 연도를 반환
+	
+</script>
+</head>
+<body>
+<h3>date 예제 3_Date Setting 해보기</h3>
+<p>﻿setFullYear, month, date 메소드는 date 객체의 값을 특정 날짜로 지정한다.<br>
+   자바스크립트에서의 월은 0부터 시작 0=1월이며. setdate에서 현재 날짜에 초과되는 일수만큼 다음달로 넘어간다.
+     </p>
+</body>
+</html>

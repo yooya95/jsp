@@ -1,0 +1,12 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="oAjax.MemberDao"><rhs name\="oAjax.MemberDao"/></lhs><lhs name\="javax.naming.Context"><rhs name\="javax.naming.InitialContext"/></lhs><lhs name\="dao.BoardDao"><rhs name\="dao.BoardDao"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="dao.Board"><rhs name\="dao.Board"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="dto.Item"><rhs name\="dto.Item"/></lhs><lhs name\="dao.ItemDao"><rhs name\="dao.ItemDao"/></lhs><lhs name\="dao.CustomDao"><rhs name\="dao.CustomDao"/></lhs><lhs name\="dto.Custom"><rhs name\="dto.Custom"/></lhs><lhs name\="dao.SawonDao"><rhs name\="dao.SawonDao"/></lhs><lhs name\="dto.Order1"><rhs name\="dto.Order1"/></lhs><lhs name\="dao.OrderDao"><rhs name\="dao.OrderDao"/></lhs><lhs name\="dto.Order_detail1"><rhs name\="dto.Order_detail1"/></lhs><lhs name\="dao.Order_detailDao"><rhs name\="dao.Order_detailDao"/></lhs></history>
+content_assist_number_of_computers=17
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

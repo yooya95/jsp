@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+  // HW대상 
+  // name -> 이름 입력? & focus
+  // age  ->1. 나이 입력 & focus
+  // age  ->2. 나이가 문자임 & focus
+  //  addr --> id이용해서 접근
+  //           주소좀 넣어줄래 & focus
+  	if (frm.name.value=="") { 
+		alert("이름 입력?");
+		frm.name.focus();
+		return;
+    }
+	if (!frm.age.value) { 
+		alert("나이 입력");
+		frm.age.focus();
+		return;
+	}
+	if (isNaN(frm.age.value)) { 
+		alert("나이가 문자임");
+		frm.age.focus();
+		frm.age.value="";
+		return;
+	}
+	
+	var addr = document.getElementById("addr");
+	if (addr.value.length==0) {
+	    	alert("주소좀 넣어줄래");
+	    	addr.focus();
+			return;
+	} 
+
+</script>
+</head>
+<body>
+  <h2>입력창</h2>
+   <form action="" name="frm">
+ 	   이름 : <input type="text"  name="name" > <p>
+	   나이 : <input type="text"  name="age" > <p>
+	   주소 : <input type="text"  name="addr" id ="addr"> <p> 
+	   <input type="button"   value="확인" onclick="chk()" > <p>
+   </form> 
+
+</body>
+</html>

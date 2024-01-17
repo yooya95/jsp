@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"src="../js/httpRequest.js"></script>
+<script type="text/javascript">
+	// 이름을 확인하는 함수
+	function chk() {
+		//encodeURIComponent : 문자열을 URL에서 사용 가능한 형식으로 변환하는 역할
+		var params="name="+encodeURIComponent (frm.name.value);
+	  //sendRequest(url(server PGM),    params, callback, method)
+		sendRequest("hello.jsp",		params, result,  "POST");
+	}
+	
+		
+
+	// 서버 요청 결과를 처리하는 함수
+	function result(){
+		//READYSTATE 4이면 서버요청이 완료되었는 지 확인 , STATUS 200이면 서버로부터 성공적인 응답을 받았는지 확인
+		if(httpRequest.readyState==4)
+			if(httpRequest.status==200){
+				var text1 = httpRequest.responseText;
+				start = text1.indexOf("<body>");
+				end = text1.indexOf("</body>");
+				var text2 = text1.substring(start+6, end);
+				alert(text1);
+				alert(text2);
+				
+			} else alert("Server 오류");
+	}
+</script>
+</head>
+<body>
+<h2>이름을 입력하세요</h2>
+	<form name="frm" action="">
+		<input type="text" name="name"><p>
+		<input type="button" value="확인" onclick="chk()">
+	</form>
+</body>
+</html>

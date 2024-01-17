@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;domImgChg.html&apos; to &apos;array01.html&apos;&#x0D;&#x0A;- Original project: &apos;oJavaScript&apos;&#x0D;&#x0A;- Destination element: &apos;array01.html&apos;&#x0D;&#x0A;- Original element: &apos;domImgChg.html&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="src/main/webapp/04/domImgChg.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1691671868836" target="src/main/webapp/02/array01.html" units="0" version="1.0"/>
+</session>

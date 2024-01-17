@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// Json  *****
+	var wo = {"name":"진형", "addr":"안산"};
+	// json 객체를 String 객체로 변환
+	alert("JSON.stringify(wo)->"+JSON.stringify(wo));
+	// parse 메소드는 string 객체를 json 객체로 변환
+	alert("JSON.parse(JSON.stringify(wo)).name->"+JSON.parse(JSON.stringify(wo)).name);
+	alert("wo.name->"+wo.name);
+	alert("wo.addr->"+wo.addr);
+
+
+</script>
+</head>
+<body>
+ <h1>dom Json</h1>
+ 자바스크립트 객체의 형태를 가지는 문자열<br>
+ JSON.stringify : 배열(객체)을 JSON문자열로 반환<br>
+ JSON.parse: 문자열을 배열(객체)로 반환 <br>
+</body>
+</html>

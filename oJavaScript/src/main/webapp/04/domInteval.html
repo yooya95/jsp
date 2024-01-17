@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function init() {
+	  // 웹페이지의 특정 부분을 주기적으로 업데이트해줘야 하거나, 
+	  // 어떤 API로 부터 변경된 데이터를 주기적으로 받아와야 하는 경우
+	   var time = setInterval(function() {
+					var date = new Date();
+					var hour = date.getHours();
+					var min = date.getMinutes();
+					var sec = date.getSeconds();
+					document.write(hour+"시 " + min +"분 "+sec+"초"+"<br>");
+					document.clear;
+	              }, 1000);
+	   
+	  // clearTimeout() 함수를 호출하면 기다렸다가 실행될 코드를 취소
+	   setTimeout(function(){
+			clearInterval(time);
+		}, 11000);
+}
+
+
+
+</script>
+</head>
+<body onload="init()">
+   <h1>setInterval 함수를 사용하는 예제</h1>
+</body>
+</html>

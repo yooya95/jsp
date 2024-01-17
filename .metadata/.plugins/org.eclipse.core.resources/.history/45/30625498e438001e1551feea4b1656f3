@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ form {
+  border: 1px solid
+ }
+</style>
+<script type="text/javascript">
+function chk() {
+	if (frm.name.value.length==0) {
+		alert("이름을 입력해주세요");
+	    frm.name.focus();
+	    return false;
+	}
+
+	if (frm.age.value==""){
+		alert("나이를 입력해주세요");
+		frm.age.focus();
+		return false;
+	}
+	
+	if (isNaN(frm.age.value)){
+		alert("나이가 문자입니다. 다시 입력해주세요");
+		frm.age.focus();
+		return false;
+	}
+	
+	if (frm.addr.value==""){
+		alert("주소를 입력해주세요");
+		frm.addr.focus();
+		return false;
+	}
+
+	if(frm.pw.value==""){
+		alert("비밀번호를 입력해주세요");
+		frm.pw.focus();
+		return;
+	}
+}
+
+</script>
+</head>
+<body>
+ <form name="frm" onsubmit="chk()">
+  개인정보를 입력해주세요<br>
+  <hr>
+  <label>이름 : </label>
+  <input type="text" name="name" > <p>
+  <label>나이 : </label>
+  <input type="text" name="age" > <p>
+  <label>주소 : </label>
+  <input type="text" name="addr" > <p>
+  <label>암호 : </label>
+  <input type="password" name="pw"> <p>
+  
+  <input type="submit" value="제출">
+ 
+ </form>
+</body>
+</html>

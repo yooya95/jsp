@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	a = 7;
+	b = "대박";
+	var c = 1.56;
+	var d = '5분';
+	let e = 'eee분';
+	document.write("정수a : " + a + "<p>");
+	document.write("문자b : " + b + "<br>");
+	document.write("실수c : " + c + "<br>");
+	document.write("문자d : " + d + "<br>");
+	document.write("문자e: " + e + "<br>");
+
+    function varTest() {
+		alert('varTest Click');
+		var x = 1;
+		alert('1. varTest x->'+x); 
+		var x = 2;
+		alert('2. varTest x->'+x); 
+		if(true){
+			var x = 3; // 같은 변수
+			alert('3.varTest1 x->'+x);  
+		}
+		alert('4.varTest1 x->'+x);
+    	
+    }
+    
+    function letTest() {
+		alert('letTest Click');
+		let x = 1;
+		alert('1.letTest x->'+x);
+		x = 2;  // 선언 X , 할당 O
+		alert('2.letTest x->'+x);
+		console.log('2.letTest x->'+x); 
+		if(true){
+			let x = 3;    // 다른변수
+			alert('3.letTest x->'+x);  
+		}
+		alert('4.letTest x->'+x);
+    }
+
+</script>
+</head>
+<body>
+   <h3>Var let2</h3>
+   <button onclick="varTest()">vartest</button>
+   <button onclick="letTest()">letTest</button>
+
+</body>
+</html>

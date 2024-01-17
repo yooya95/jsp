@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var num = prompt("몇 단 구구단을 원하시는지 입력하시고 확인 버튼을 꼭 눌러주세요","5");
+	if  (isNaN(num)) document.write("바보냐 숫자 몰랴");
+	else{
+			for(var i=1; i<=9; i++)
+			document.write(num + "*" +i + "=" + (num*i) + "<br>");
+		}
+</script>
+</head>
+<body>
+	<h3> for문, if문, isNan이용한 구구단 조회하기</h3>
+</body>
+</html>

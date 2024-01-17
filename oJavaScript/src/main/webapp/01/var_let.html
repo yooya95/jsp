@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var   varName    = "varName1...";
+	let   letName    = "letName1...";
+	const constName  = "constName1...";
+
+	varName = 100;
+	document.write("1.var->"+varName+"<br>");
+
+	
+	document.write("1.let->"+letName+"<br>");
+
+	document.write("1.const->"+constName+"<br>");
+	// 변수 재선언, 변수 재할당 모두 불가능
+	// constName = 500;
+	// document.write("2.const->"+constName+"<br>");
+	// var는 재 선언 가능
+    var varName = "varName2...";
+	document.write("2.var->"+varName+"<br>");
+	// let은 재 선언 불가능
+	// let letName = "letName2...";
+	letName = "letName2...";
+	document.write("2.let->"+letName+"<br>");
+	
+	// var 
+	// 1. 재 선언 가능
+	// 2. 유연한 변수 선언으로 간단한 테스트에는 편리
+	// 3. 코드량이 많아 진다면 어디에서 어떻게 사용 될지도 파악하기 힘들뿐더러 값이 바뀔 우려
+	
+	// let 과 const 의 차이점
+	// 1.둘의 차이점은 immutable
+	// 2.let 은 변수에 재할당이 가능
+</script>
+</head>
+<body>
+   <h3>Var let</h3>
+   <hr>
+   <p>
+   var는 변수 재선언이 가능, 유연한 변수 선언으로 간단한 테스트에 편리하다<br>
+   하지만 코드량이 많아진다면 어디에서 어떻게 사용될지도 파악하기 힘들뿐더러 값이 바뀔 우려가 있다.<br>
+   <hr>
+   let과 const은 둘다 변수 재선언이 불가능하지만 let은 재 할당이 가능하다.
+   <br>
+   <br>
+   </p>
+
+</body>
+</html>

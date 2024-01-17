@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var eh = $('div.simpletext1,span,p');
+		var cnt = "갯수 : " + eh.length +"\n";
+		var p_count = document.getElementById("count");
+		var p_resultText = document.getElementById("resultText");
+		var result = "내용 : ";
+		p_count.innerHTML = cnt;
+		// div.simpletext1,span,p
+		eh.each(function(){
+			result += $(this).text() +"^"; 
+			p_resultText.innerHTML = result;
+		});
+	});
+
+</script>
+</head>
+<body>
+	<span>simple</span> 
+	<div class='simpletext1'>jQuery</div> 
+	<div>basic</div> 
+	<p>example</p>
+	
+	<p id="count"></p>
+	<h3 id="resultText"></h3>
+
+</body>
+</html>

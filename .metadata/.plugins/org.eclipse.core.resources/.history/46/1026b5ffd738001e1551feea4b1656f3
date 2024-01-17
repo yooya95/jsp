@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+
+</script>
+</head>
+<body>
+  <h3>좋아하는 영화를 선택해주세요</h3>
+  <form action="" name="frm">
+  <label for="moive1"> 어바웃타임 </label>
+  <input type="checkbox" name="movie" id="m1" value="어바웃타임" ></input>
+  <label for="moive2"> 다크나이트 </label>
+  <input type="checkbox" name="movie" id="m2" value="다크나이트" ></input>
+  <label for="moive3"> 코코 </label>
+  <input type="checkbox" name="movie" id="m3" value="코코" ></input>
+  <label for="moive4"> 주토피아 </label>
+  <input type="checkbox" name="movie" id="m4" value="주토피아" ></input>  
+  
+  
+  </form>  
+</body>
+</html>

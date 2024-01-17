@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function chk() {
+		var str= "좋아하는 영화는 ?\n";
+        // for  --> movie
+        for(var i =0; i < frm.movie.length; i++) {
+			if (frm.movie[i].checked) str+= frm.movie[i].value+"\n";
+		}
+
+		alert(str);
+		var p_message = document.getElementById("message");
+		p_message.innerHTML = str;
+	}
+
+
+</script>
+</head>
+<body>
+   <h2>좋아하는 영화를 선택 2</h2>
+   <form action="kkk.jsp" name="frm">
+   		콘크리트유토피아 <input type="checkbox" name="movie" id="m1" value="콘크리트유토피아"><p>
+	    <label for="m2">밀수</label>
+	    <input type="checkbox" name="movie" id="m2" value="밀수"><p>
+	    <label for="m3">미션임파서벌</label>
+	    <input type="checkbox" name="movie" id="m3" value="미션임파서벌"><p>
+	    <input type="button" value="확인" onclick="chk()">
+   </form>
+
+    <p id="message"></p>
+    
+</body>
+</html>

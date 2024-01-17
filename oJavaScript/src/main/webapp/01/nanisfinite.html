@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//변수에 숫자 할당
+	var number1 = 1/0;		//Infinity
+	var number2 = -1/0;		//-Infinity
+	var number3 = 1;
+	var number4 = "1";
+	var number5 = 0/0;
+	
+//유한수인지 검사
+	console.log("--------isFinite-------------")
+	console.log(isFinite(number1));  //false
+	console.log(isFinite(number2));  //false
+	console.log(isFinite(number3));  //true
+	console.log(isFinite(number4));  //true
+	console.log(isFinite(number5));  //false
+	
+//NaN인지 검사
+	console.log("-----------NaN---------------")
+	console.log(isNaN(number4));	//false
+	console.log(isNaN(number5));	//true
+	console.log(isNaN(NaN));		//ture
+	console.log(NaN);				//NaN
+</script>
+</head>
+<body>
+<h1>NaN Isfinite</h1>
+</body>
+</html>
